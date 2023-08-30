@@ -4,34 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-
-<style>
-
-a{ 
-display: block;
-}
-
-</style>
-
-    
-
-
-   
+    <title>Media query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="www.bing.com">bing</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi esse iusto adipisci fuga quibusdam necessitatibus fugit aliquid tempora eos? Quos maiores sit alias vero voluptates aspernatur, ut odio at molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis aliquam ut, similique ad ex et id ipsa architecto ducimus possimus voluptas sunt porro, nemo assumenda eius dicta ipsum illum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, cupiditate quas! Nisi blanditiis culpa quod minima, nemo sunt tempora voluptatem optio voluptas impedit eum soluta maxime, rerum obcaecati perferendis. Commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eveniet nam deserunt enim, laborum aspernatur ratione qui quae repellendus quisquam modi rem, explicabo fuga corporis est. Mollitia cumque voluptas maxime.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis possimus consequatur excepturi aspernatur debitis quasi nesciunt minus ex a, blanditiis cum dolorem! Pariatur maxime repellat hic nesciunt voluptatum dolorem placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus incidunt, pariatur non, ipsam officia eaque deserunt vero quia libero, velit fuga vitae quas. Natus ab rerum id autem! Ipsam?</p>
+    </main>
+    <script>
 
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
 
-    <h1>DJ-Systems</h1>
-
-    <hr>
-    <a href="https://www.bing.com">Bing</a>
-
-    
-<a href="https://danieljunior.dev.br">Dj-developer</a>
-
-   <a href="https://outlook.live.com/mail/0/inbox">E-mail</a>
-
-
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
