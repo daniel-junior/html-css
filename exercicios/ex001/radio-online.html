@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Landing Page</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Seu Site</title>
 <style>
-     
 
 body {
   margin: 0;
@@ -56,50 +55,13 @@ body {
   padding: 50px;
   background-color: #f9f9f9;
   min-height: 100vh;
-}     
+}
 
+</style>
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            font-family: 'Audiowide', cursive;
-            color: #333;
-        }
-
-        .social-buttons {
-            margin-top: 20px;
-        }
-
-        .social-button {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #0077B5;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .social-button:hover {
-            background-color: #00548D;
-        }
-    </style>
 </head>
 <body>
+
   <div class="menu-btn" onclick="toggleMenu()">
     <div class="btn-line"></div>
     <div class="btn-line"></div>
@@ -126,10 +88,11 @@ body {
     <!-- Conteúdo da Seção 3 -->
   </div>
 
-  <script src="script.js"></script></body>
+  <script src="script.js"></script>
 
 function toggleMenu() {
   var menu = document.querySelector('.menu');
   menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
 }
+</body>
 </html>
