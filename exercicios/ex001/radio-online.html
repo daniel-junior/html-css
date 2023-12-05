@@ -5,94 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Seu Site</title>
-<style>
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
-.menu-btn {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-}
+ <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
 
-.btn-line {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 6px 0;
-}
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+        }
 
-.menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-}
+        h1 {
+            color: #333;
+        }
 
-.menu ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
+        .button-container {
+            margin-top: 20px;
+        }
 
-.menu li {
-  padding: 15px;
-}
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-.menu a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
-
-.section {
-  padding: 50px;
-  background-color: #f9f9f9;
-  min-height: 100vh;
-}
-
-.p {
-padding: 10px;
-background-color: gray;
-}
-</style>
-
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="menu-btn" onclick="toggleMenu()">
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-  </div>
-
-  <div class="menu">
-    <ul>
-      <li><a href="#section1">Seção 1</a></li>
-      <li><a href="#section2">Seção 2</a></li>
-      <li><a href="#section3">Seção 3</a></li>
-    </ul>
-  </div>
-
-  <div id="section1" class="section">
-    <!-- Conteúdo da Seção 1 -->
-  </div>
-
-  <div id="section2" class="section">
-    <!-- Conteúdo da Seção 2 -->
-  </div>
-
-  <div id="section3" class="section">
-    <!-- Conteúdo da Seção 3 -->
-  </div>
 
 
+ <div class="container">
+        <h1>Sua Landing Page</h1>
+        <p>Descrição ou conteúdo da sua landing page.</p>
+        
+        <div class="button-container">
+            <a href="#" class="button">Botão 1</a>
+            <a href="#" class="button">Botão 2</a>
+        </div>
+    </div>
 <h1>dj-systems</h1>
 
 
